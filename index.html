@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
+    <title>Restaurant Teriff</title>
+    <link rel="stylesheet" href="../src/styles/home.css">
 </head>
+
 <body>
-    <div id="content"></div>
-    <script src="main.js"></script>
+    <div id="content">
+        <div id="nav">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+            <button id='borgir'>borgir</button>
+            <button id="menu-close">X</button>
+
+        </div>
+
+        <main>
+            <div class="hero">
+                <h1>Teriff Restaurant</h1>
+                <p>Niciun fel de legătură cu Sheriff.</p>
+                <p>Servim cu drag în:</p>
+                <ul id="locations">
+                    <li>
+                        <p class="place">Târgoviște 1</p>
+                        <p class="addr">Aleea Sinaia, nr. 3 (peste drum de Sheriff)</p>   
+                    </li>
+                    <li>
+                        <p class="place">Târgoviște 2</p>
+                        <p class="addr">micro 4, Piața Aurora</p>
+                    </li>
+                    <li>
+                        <p class="place">Aninoasa</p>
+                        <p class="addr">Str. Ungaria, nr. 1</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="story">
+                <h2>Povestea Teriff</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nam qui dicta architecto eligendi.
+                    Possimus molestias sapiente cumque vel non nihil corporis, est asperiores. Dolorem, obcaecati quos!
+                    Eaque, modi blanditiis!
+                    Repellat, ipsum omnis molestias repellendus iusto fugit fuga adipisci iste ratione? Dicta voluptatum
+                    mollitia enim voluptas, maiores commodi maxime similique quae, in praesentium molestiae aliquam ipsa
+                    quaerat fuga perspiciatis. Corporis?</p>
+            </div>
+
+            <div class="flagships">
+                <h2>Vino să încerci specialitățile noastre renumite mondial!</h2>
+                <div class="flagship" id="spicy-crunch">
+                    <h3>Spicy Crunch Sandwich</h3>
+                </div>
+
+                <div class="flagship" id="chifla-chef">
+                    <h3>Chifla Chef</h3>
+                </div>
+            </div>
+
+            <div class="menu-preview">
+                <h2>Sau alege din întregul nostru meniu, unde garantat vei găsi ceva pe gustul
+                    tău!</h2>
+                <ul class="menu-preview-nav">
+                    <li>Pizza</li>
+                    <li>Burger</li>
+                    <li>Mexican</li>
+                    <li>Street Food</li>
+                </ul>
+                <div class="pizza-preview">
+                    <div class="pizza-preview-item">
+                        <img src="img/pizza-1.jpg" alt="picture of pizza">
+                        <h3>Pizza Margherita</h3>
+                    </div>
+                    <div class="pizza-preview-item">
+                        <img src="img/pizza-2.jpg" alt="picture of pizza">
+                        <h3>Pizza Margherita</h3>
+                    </div>
+                    <div class="pizza-preview-item">
+                        <img src="img/pizza-3.jpg" alt="picture of pizza">
+                        <h3>Pizza Margherita</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h2>Ce spun clienții noștri</h2>
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <div class="testimonial-name">
+                        <span>John Doe</span>
+                        <span>CEO</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <div class="testimonial-name">
+                        <span>John Doe</span>
+                        <span>CEO</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <div class="testimonial-name">
+                        <span>John Doe</span>
+                        <span>CEO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2>Contactează-ne!</h2>
+                <form action="">
+                    <input type="text" placeholder="Nume">
+                    <input type="text" placeholder="Telefon">
+                    <input type="text" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mesaj"></textarea>
+                    <button type="submit">Trimite</button>
+                </form>
+
+            </div>
+
+            <div id='footer'>
+
+            </div>
+        </main>
+        <script src="main.js"></script>
 </body>
+
 </html>
