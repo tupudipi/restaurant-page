@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Teriff</title>
     <link rel="stylesheet" href="../src/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -35,13 +38,11 @@
                 <p>Servim cu drag în:</p>
                 <ul id="locations">
                     <li>
-                        <p class="place">Târgoviște 1</p>
+                        <p class="place">Târgoviște</p>
                         <p class="addr">Aleea Sinaia, nr. 3 (peste drum de Sheriff)</p>   
-                    </li>
-                    <li>
-                        <p class="place">Târgoviște 2</p>
                         <p class="addr">micro 4, Piața Aurora</p>
                     </li>
+
                     <li>
                         <p class="place">Aninoasa</p>
                         <p class="addr">Str. Ungaria, nr. 1</p>
@@ -81,15 +82,12 @@
                 </ul>
                 <div class="pizza-preview">
                     <div class="pizza-preview-item">
-                        <img src="img/pizza-1.jpg" alt="picture of pizza">
                         <h3>Pizza Margherita</h3>
                     </div>
                     <div class="pizza-preview-item">
-                        <img src="img/pizza-2.jpg" alt="picture of pizza">
                         <h3>Pizza Margherita</h3>
                     </div>
                     <div class="pizza-preview-item">
-                        <img src="img/pizza-3.jpg" alt="picture of pizza">
                         <h3>Pizza Margherita</h3>
                     </div>
                 </div>
@@ -101,7 +99,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
                     <div class="testimonial-name">
                         <span>John Doe</span>
-                        <span>CEO</span>
                     </div>
                 </div>
 
@@ -109,14 +106,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
                     <div class="testimonial-name">
                         <span>John Doe</span>
-                        <span>CEO</span>
                     </div>
                 </div>
                 <div class="testimonial">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
                     <div class="testimonial-name">
                         <span>John Doe</span>
-                        <span>CEO</span>
                     </div>
                 </div>
             </div>
@@ -124,17 +119,37 @@
             <div class="contact">
                 <h2>Contactează-ne!</h2>
                 <form action="">
-                    <input type="text" placeholder="Nume">
-                    <input type="text" placeholder="Telefon">
-                    <input type="text" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mesaj"></textarea>
-                    <button type="submit">Trimite</button>
+                    <div class="form-group">
+                        <label for="name">Nume:</label>
+                        <input type="text" placeholder="Nume" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">Telefon:</label>
+                        <input type="tel" placeholder="Telefon" name="tel" id="tel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" placeholder="Email" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mesajul tău:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mesaj"></textarea>
+                    </div>
+
+                    <button type="submit">Trimite mesaj</button>
                 </form>
 
             </div>
 
             <div id='footer'>
+                <div class="socials">
 
+                </div>
+
+                <p>2022 @ tupudipi</p>
             </div>
         </main>
         <script src="main.js"></script>
