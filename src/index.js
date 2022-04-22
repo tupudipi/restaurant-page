@@ -207,56 +207,31 @@ function flagshipsComponent(){
 } main.appendChild(flagshipsComponent());
 
 function menuPreviewComponent(){
-    const menuPreview = document.createElement('div');
-        menuPreview.classList.add('menu-preview');
-    const menuPreviewTitle = document.createElement('h2');
-        menuPreviewTitle.innerHTML='Meniul Teriff';
-        menuPreview.appendChild(menuPreviewTitle);
+    function pizzaPreview (){
+        const pizzaPreview = document.createElement('div');
+            pizzaPreview.classList.add('pizza-preview');
+            const pizzaPreviewItem1 = document.createElement('div');
+                pizzaPreviewItem1.classList.add('pizza-preview-item');
+                const pizzaPreviewItem1Title = document.createElement('h3');
+                    pizzaPreviewItem1Title.innerHTML='Pizza Margherita';
+                    pizzaPreviewItem1.appendChild(pizzaPreviewItem1Title);
+                pizzaPreview.appendChild(pizzaPreviewItem1);
+            const pizzaPreviewItem2 = document.createElement('div');
+                pizzaPreviewItem2.classList.add('pizza-preview-item');
+                const pizzaPreviewItem2Title = document.createElement('h3');
+                    pizzaPreviewItem2Title.innerHTML='Pizza Capriciosa';
+                    pizzaPreviewItem2.appendChild(pizzaPreviewItem2Title);
+                pizzaPreview.appendChild(pizzaPreviewItem2);
+            const pizzaPreviewItem3 = document.createElement('div');
+                pizzaPreviewItem3.classList.add('pizza-preview-item');
+                const pizzaPreviewItem3Title = document.createElement('h3');
+                    pizzaPreviewItem3Title.innerHTML='Pizza Quattro Stagioni';
+                    pizzaPreviewItem3.appendChild(pizzaPreviewItem3Title);
+                pizzaPreview.appendChild(pizzaPreviewItem3);
+            return pizzaPreview;
+    }
 
-    const menuPreviewParagraph = document.createElement('p');
-        menuPreviewParagraph.classList.add('secondary');
-        menuPreviewParagraph.innerHTML='pe gustul tău';
-        menuPreview.appendChild(menuPreviewParagraph);
-
-    const menuPreviewList = document.createElement('ul');
-        menuPreviewList.id='menu-preview-nav';
-        const menuPreviewListItem1 = document.createElement('li');
-            menuPreviewListItem1.innerHTML="pizza";
-            menuPreviewList.appendChild(menuPreviewListItem1);
-        const menuPreviewListItem2 = document.createElement('li');
-            menuPreviewListItem2.innerHTML="burger";
-            menuPreviewList.appendChild(menuPreviewListItem2);
-        const menuPreviewListItem3 = document.createElement('li');
-            menuPreviewListItem3.innerHTML="mexican";
-            menuPreviewList.appendChild(menuPreviewListItem3);
-        const menuPreviewListItem4 = document.createElement('li');
-            menuPreviewListItem4.innerHTML="Streed Food";
-            menuPreviewList.appendChild(menuPreviewListItem4);
-    menuPreview.appendChild(menuPreviewList);
-
-    const pizzaPreview = document.createElement('div');
-        pizzaPreview.classList.add('pizza-preview');
-        const pizzaPreviewItem1 = document.createElement('div');
-            pizzaPreviewItem1.classList.add('pizza-preview-item');
-            const pizzaPreviewItem1Title = document.createElement('h3');
-                pizzaPreviewItem1Title.innerHTML='Pizza Margherita';
-                pizzaPreviewItem1.appendChild(pizzaPreviewItem1Title);
-            pizzaPreview.appendChild(pizzaPreviewItem1);
-        const pizzaPreviewItem2 = document.createElement('div');
-            pizzaPreviewItem2.classList.add('pizza-preview-item');
-            const pizzaPreviewItem2Title = document.createElement('h3');
-                pizzaPreviewItem2Title.innerHTML='Pizza Capriciosa';
-                pizzaPreviewItem2.appendChild(pizzaPreviewItem2Title);
-            pizzaPreview.appendChild(pizzaPreviewItem2);
-        const pizzaPreviewItem3 = document.createElement('div');
-            pizzaPreviewItem3.classList.add('pizza-preview-item');
-            const pizzaPreviewItem3Title = document.createElement('h3');
-                pizzaPreviewItem3Title.innerHTML='Pizza Quattro Stagioni';
-                pizzaPreviewItem3.appendChild(pizzaPreviewItem3Title);
-            pizzaPreview.appendChild(pizzaPreviewItem3);
-    menuPreview.appendChild(pizzaPreview);
-
-
+    function burgerPreview (){
     const burgerPreview = document.createElement('div');
         burgerPreview.classList.add('burger-preview');
         const burgerPreviewItem1 = document.createElement('div');
@@ -277,51 +252,147 @@ function menuPreviewComponent(){
                 burgerPreviewItem3Title.innerHTML='Burger Bacon';
                 burgerPreviewItem3.appendChild(burgerPreviewItem3Title);    
             burgerPreview.appendChild(burgerPreviewItem3);
-    menuPreview.appendChild(burgerPreview);
+        return burgerPreview;
+    }
 
+    function mexicanPreview (){
     const mexicanPreview = document.createElement('div');
         mexicanPreview.classList.add('mexican-preview');
         const mexicanPreviewItem1 = document.createElement('div');  
             mexicanPreviewItem1.classList.add('mexican-preview-item');
             const mexicanPreviewItem1Title = document.createElement('h3');
-                mexicanPreviewItem1Title.innerHTML='Mexican Burger';
+                mexicanPreviewItem1Title.innerHTML='Quesadilla';
                 mexicanPreviewItem1.appendChild(mexicanPreviewItem1Title);      
             mexicanPreview.appendChild(mexicanPreviewItem1);
         const mexicanPreviewItem2 = document.createElement('div');
             mexicanPreviewItem2.classList.add('mexican-preview-item');
             const mexicanPreviewItem2Title = document.createElement('h3');  
-                mexicanPreviewItem2Title.innerHTML='Mexican Pizza';
+                mexicanPreviewItem2Title.innerHTML='Burrito';
                 mexicanPreviewItem2.appendChild(mexicanPreviewItem2Title);  
             mexicanPreview.appendChild(mexicanPreviewItem2);
         const mexicanPreviewItem3 = document.createElement('div');  
             mexicanPreviewItem3.classList.add('mexican-preview-item');
             const mexicanPreviewItem3Title = document.createElement('h3');  
-                mexicanPreviewItem3Title.innerHTML='Mexican Steak';
+                mexicanPreviewItem3Title.innerHTML='Nachos';
                 mexicanPreviewItem3.appendChild(mexicanPreviewItem3Title);  
             mexicanPreview.appendChild(mexicanPreviewItem3);
-    menuPreview.appendChild(mexicanPreview);
+        return mexicanPreview;
+    }
 
+    function streedFoodPreview (){
     const streedFoodPreview = document.createElement('div');
         streedFoodPreview.classList.add('streed-food-preview');
         const streedFoodPreviewItem1 = document.createElement('div');
             streedFoodPreviewItem1.classList.add('streed-food-preview-item');
             const streedFoodPreviewItem1Title = document.createElement('h3');
-                streedFoodPreviewItem1Title.innerHTML='Steak';
+                streedFoodPreviewItem1Title.innerHTML='Chifla Chef';
                 streedFoodPreviewItem1.appendChild(streedFoodPreviewItem1Title);    
             streedFoodPreview.appendChild(streedFoodPreviewItem1);
         const streedFoodPreviewItem2 = document.createElement('div');   
             streedFoodPreviewItem2.classList.add('streed-food-preview-item');
             const streedFoodPreviewItem2Title = document.createElement('h3');   
-                streedFoodPreviewItem2Title.innerHTML='Steak';
+                streedFoodPreviewItem2Title.innerHTML='Shaorma';
                 streedFoodPreviewItem2.appendChild(streedFoodPreviewItem2Title);    
             streedFoodPreview.appendChild(streedFoodPreviewItem2);  
         const streedFoodPreviewItem3 = document.createElement('div');   
             streedFoodPreviewItem3.classList.add('streed-food-preview-item');
             const streedFoodPreviewItem3Title = document.createElement('h3');   
-                streedFoodPreviewItem3Title.innerHTML='Steak';
+                streedFoodPreviewItem3Title.innerHTML='Cârnat';
                 streedFoodPreviewItem3.appendChild(streedFoodPreviewItem3Title);    
             streedFoodPreview.appendChild(streedFoodPreviewItem3);  
-    menuPreview.appendChild(streedFoodPreview);
+        return streedFoodPreview;
+    }
+
+    function showPreview(option){
+        menuPreviewContent.innerHTML='';
+        switch(option){
+            case 'pizza': menuPreviewContent.appendChild(pizzaPreview());
+            break;
+            case 'burger': menuPreviewContent.appendChild(burgerPreview());
+            break;
+            case 'mexican': menuPreviewContent.appendChild(mexicanPreview());
+            break;
+            case 'streed food': menuPreviewContent.appendChild(streedFoodPreview());
+            break;
+        }
+    }
+
+    const menuPreview = document.createElement('div');
+        menuPreview.classList.add('menu-preview');
+    const menuPreviewTitle = document.createElement('h2');
+        menuPreviewTitle.innerHTML='Meniul Teriff';
+        menuPreview.appendChild(menuPreviewTitle);
+    let previewOptions = [];
+    let selectedPreviewOption = 'pizza';
+
+    const menuPreviewParagraph = document.createElement('p');
+        menuPreviewParagraph.classList.add('secondary');
+        menuPreviewParagraph.innerHTML='pe gustul tău';
+        menuPreview.appendChild(menuPreviewParagraph);
+
+    const menuPreviewList = document.createElement('ul');
+        menuPreviewList.classList.add('menu-preview-nav');
+        const menuPreviewListItem1 = document.createElement('li');
+            menuPreviewListItem1.innerHTML="pizza";
+            previewOptions.push(menuPreviewListItem1);
+            menuPreviewList.appendChild(menuPreviewListItem1);
+        const menuPreviewListItem2 = document.createElement('li');
+            menuPreviewListItem2.innerHTML="burger";
+            previewOptions.push(menuPreviewListItem2);
+            menuPreviewList.appendChild(menuPreviewListItem2);
+        const menuPreviewListItem3 = document.createElement('li');
+            menuPreviewListItem3.innerHTML="mexican";
+            previewOptions.push(menuPreviewListItem3);
+            menuPreviewList.appendChild(menuPreviewListItem3);
+        const menuPreviewListItem4 = document.createElement('li');
+            menuPreviewListItem4.innerHTML="streed food";
+            previewOptions.push(menuPreviewListItem4);
+            menuPreviewList.appendChild(menuPreviewListItem4);
+    menuPreview.appendChild(menuPreviewList);
+
+    const menuPreviewContent = document.createElement('div');
+        menuPreviewContent.classList.add('menu-preview-content');
+    menuPreview.appendChild(menuPreviewContent);
+    showPreview(selectedPreviewOption);
+
+    previewOptions.forEach(option => {
+        option.addEventListener('click', function(){
+            selectedPreviewOption = option.innerHTML;
+            console.log(selectedPreviewOption);
+            showPreview(selectedPreviewOption);
+        });
+    }); 
 
     return menuPreview;
-}
+} main.appendChild(menuPreviewComponent());
+
+function testimonialsComponent(){
+    const testimonials = document.createElement('div');
+        testimonials.classList.add('testimonials');
+    const testimonialsTitle = document.createElement('h2');
+        testimonialsTitle.innerHTML='Ce spun clienții noștri';
+        testimonials.appendChild(testimonialsTitle);
+    
+    const testimonial1 = document.createElement('div');
+        testimonial1.classList.add('testimonial');
+    const testimonial1Text = document.createElement('p');
+    testimonial1Text.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.";
+    const testimonial1Author = document.createElement('h3');
+    testimonial1Author.innerHTML = "John Doe";
+    testimonial1.appendChild(testimonial1Text);
+    testimonial1.appendChild(testimonial1Author);
+
+    const testimonial2 = document.createElement('div');
+        testimonial2.classList.add('testimonial');
+    const testimonial2Text = document.createElement('p');
+    testimonial2Text.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.";
+    const testimonial2Author = document.createElement('h3');
+    testimonial2Author.innerHTML = "John Doe";
+    testimonial2.appendChild(testimonial2Text);
+    testimonial2.appendChild(testimonial2Author);
+
+    testimonials.appendChild(testimonial1);
+    testimonials.appendChild(testimonial2);
+    
+    return testimonials;
+} main.appendChild(testimonialsComponent());
