@@ -36,7 +36,7 @@ h2{
 }
 
 #nav{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.75);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@ h2{
     top: 0;
     left: 0;
     width: 100%;
+    transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 #nav-links{
@@ -57,13 +58,16 @@ h2{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-out;
 }
 
 #nav-links > li > a{
@@ -80,10 +84,13 @@ main{
 }
 
 #menu-close{
-    display: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
     padding: 0.5rem;
     cursor: pointer;
     z-index: 10;
+    position: absolute;
 }
 
 .hero{
