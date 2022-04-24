@@ -1,41 +1,40 @@
 import './styles/home.css';
 
 const content = document.getElementById('content');
-const main = document.createElement('main');
-
-function displayNav() {
-    console.log('displayNav');
-    let nav = document.getElementById('nav-links');
-    nav.style.visibility = 'visible';
-    nav.style.opacity = '1';
-
-    let navButton = document.getElementById('borgir');
-    let navCloseBtn = document.getElementById('menu-close');
-    navCloseBtn.style.visibility = 'visible';
-    navCloseBtn.style.opacity = '1';
-    navCloseBtn.style.position = 'relative';
-
-    navButton.style.visibility = 'hidden';
-    navButton.style.opacity = '0';
-}
-
-function closeNav() {
-    console.log('closeNav');
-    let nav = document.getElementById('nav-links');
-    nav.style.visibility = 'hidden';
-    nav.style.opacity = '0';
-
-    let navButton = document.getElementById('borgir');
-    let navCloseBtn = document.getElementById('menu-close');
-    navCloseBtn.style.visibility = 'hidden';
-    navCloseBtn.style.opacity = '0';
-    navCloseBtn.style.position = 'absolute';
-
-    navButton.style.visibility = 'visible';
-    navButton.style.opacity = '1';
-}
 
 function nav(){
+    function displayNav() {
+        console.log('displayNav');
+        let nav = document.getElementById('nav-links');
+        nav.style.visibility = 'visible';
+        nav.style.opacity = '1';
+    
+        let navButton = document.getElementById('borgir');
+        let navCloseBtn = document.getElementById('menu-close');
+        navCloseBtn.style.visibility = 'visible';
+        navCloseBtn.style.opacity = '1';
+        navCloseBtn.style.position = 'relative';
+    
+        navButton.style.visibility = 'hidden';
+        navButton.style.opacity = '0';
+    }
+    
+    function closeNav() {
+        console.log('closeNav');
+        let nav = document.getElementById('nav-links');
+        nav.style.visibility = 'hidden';
+        nav.style.opacity = '0';
+    
+        let navButton = document.getElementById('borgir');
+        let navCloseBtn = document.getElementById('menu-close');
+        navCloseBtn.style.visibility = 'hidden';
+        navCloseBtn.style.opacity = '0';
+        navCloseBtn.style.position = 'absolute';
+    
+        navButton.style.visibility = 'visible';
+        navButton.style.opacity = '1';
+    }
+
     const nav = document.createElement('div');
     nav.id='nav';
     const logo = document.createElement('div');
@@ -109,9 +108,10 @@ function nav(){
 
 
     return nav;
-} content.prepend(nav());
+}   content.appendChild(nav());
 
-content.appendChild(main);
+const main = document.createElement('main');
+    content.appendChild(main);
 
 function heroComponent(){
     const hero = document.createElement('div');
@@ -177,7 +177,7 @@ function storyComponent(){
     quaerat fuga perspiciatis. Corporis?`;
     story.appendChild(storyParagraph2);
     return story;
-}  main.appendChild(storyComponent());
+}   main.appendChild(storyComponent());
 
 function flagshipsComponent(){
     const flagships = document.createElement('div');
@@ -204,7 +204,7 @@ function flagshipsComponent(){
     flagship2.appendChild(flaghsip2Title);
     flagships.appendChild(flagship2);
     return flagships;
-} main.appendChild(flagshipsComponent());
+}   main.appendChild(flagshipsComponent());
 
 function menuPreviewComponent(){
     function pizzaPreview (){
@@ -364,7 +364,7 @@ function menuPreviewComponent(){
     }); 
 
     return menuPreview;
-} main.appendChild(menuPreviewComponent());
+}   main.appendChild(menuPreviewComponent());
 
 function testimonialsComponent(){
     const testimonials = document.createElement('div');
@@ -395,7 +395,7 @@ function testimonialsComponent(){
     testimonials.appendChild(testimonial2);
     
     return testimonials;
-} main.appendChild(testimonialsComponent());
+}   main.appendChild(testimonialsComponent());
 
 function contactComponent(){
     const contact = document.createElement('div');
@@ -456,7 +456,7 @@ function contactComponent(){
     contact.appendChild(contactForm);
 
     return contact;
-} main.appendChild(contactComponent());
+}   main.appendChild(contactComponent());
 
 function footerComponent(){
     const footer = document.createElement('div');
