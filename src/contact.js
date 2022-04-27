@@ -15,7 +15,7 @@ export default function contactComponent(){
     const contactDetails = document.createElement('div');
     contactDetails.classList.add('contact-details');
     contactDetails.innerHTML = `
-        <h2>Contacează-ne la</h2>
+        <h2>Contactează-ne la</h2>
         <p>(123) 456-7890</p>
         <p>teriffAninoasa@gmail.com</p>
     `;
