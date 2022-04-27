@@ -301,3 +301,45 @@ form > button {
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+    main{
+        width: 66vw;
+        margin: 0 auto;
+        margin-bottom: 144px;
+    }
+
+    .hero{
+        width: 100%;
+    }
+
+    .story{
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    #spicy-crunch, #chifla-chef{
+        width: 60%;
+        margin-inline: auto;
+    }
+
+    .menu-preview-nav{
+        width: 100%;
+    }
+
+    .pizza-preview-item, .burger-preview-item, .mexican-preview-item, .street-food-preview-item {
+        width: 66%;
+        height: 150px;
+        max-width: 560px;
+        font-size: 1.3rem;
+        text-shadow: 0px 0px 10px rgba(0,0,0,1);
+    }
+
+    .form-group, form > button {
+        margin-block: 1rem;
+    }
+
+    input{
+        
+    }
+}
