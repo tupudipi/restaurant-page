@@ -25,18 +25,18 @@ navLinks.forEach(link => {
         main.innerHTML = '';
         switch (page) {
             case 'home':
-                footer.style.position = 'relative';
-                main.style.marginBottom = '0';
+                // footer.style.position = 'relative';
+                // main.style.marginBottom = '0';
                 main.appendChild(homePage());
                 break;
             case 'menu':
-                footer.style.position = 'fixed';
-                main.style.marginBottom = '144px';
+                // footer.style.position = 'fixed';
+                // main.style.marginBottom = '144px';
                 main.appendChild(menuPage());
                 break;
             case 'contact':
-                footer.style.position = 'fixed';
-                main.style.marginBottom = '144px';
+                // footer.style.position = 'fixed';
+                // main.style.marginBottom = '144px';
                 main.appendChild(contactPage());
                 break;
             default:
@@ -51,8 +51,8 @@ main.appendChild(homePage());
 
 content.appendChild(footerComponent());
 const footer = document.querySelector('#footer');
-if(page=='home'){
-    footer.style.position = 'relative';
-    main.style.marginBottom = '0';
-} 
+// if(page=='home'){
+//     footer.style.position = 'relative';
+//     main.style.marginBottom = '0';
+// } 
 

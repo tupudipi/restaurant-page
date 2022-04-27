@@ -67,7 +67,7 @@ export default function homePage(){
         const testimonial2Text = document.createElement('p');
         testimonial2Text.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.";
         const testimonial2Author = document.createElement('h3');
-        testimonial2Author.innerHTML = "John Doe";
+        testimonial2Author.innerHTML = "Jane Doe";
         testimonial2.appendChild(testimonial2Text);
         testimonial2.appendChild(testimonial2Author);
     
@@ -85,7 +85,7 @@ export default function homePage(){
             story.appendChild(storyTitle);
         const storyParagraph1 = document.createElement('p');
             storyParagraph1.classList.add('secondary');
-            storyParagraph1.innerHTML = 'lorem ipsum dolor sit';
+            storyParagraph1.innerHTML = 'lorem ipsum dolor sit amet';
             story.appendChild(storyParagraph1);
         const storyParagraph2 = document.createElement('p');
             storyParagraph2.innerHTML = `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum nam qui dicta architecto eligendi.

@@ -1,8 +1,28 @@
 export default function contactComponent(){
     const contact = document.createElement('div');
-        contact.classList.add('contact');
+    contact.classList.add('contact');
+
+    const hours = document.createElement('div');
+    hours.classList.add('hours');
+    hours.innerHTML = `
+        <h2>Program</h2>
+        <p>Monday - Friday: 10am - 6pm</p>
+        <p>Saturday: 10am - 5pm</p>
+        <p>Sunday: Deliveries Only</p>
+    `;
+    contact.appendChild(hours);
+
+    const contactDetails = document.createElement('div');
+    contactDetails.classList.add('contact-details');
+    contactDetails.innerHTML = `
+        <h2>Contacează-ne la</h2>
+        <p>(123) 456-7890</p>
+        <p>teriffAninoasa@gmail.com</p>
+    `;
+    contact.appendChild(contactDetails);
+
     const contactTitle = document.createElement('h2');
-        contactTitle.innerHTML='Contactează-ne';
+        contactTitle.innerHTML='Sau scrie-ne un mesaj';
         contact.appendChild(contactTitle);
     const contactForm = document.createElement('form');
         contactForm.setAttribute('action', '#');
