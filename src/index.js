@@ -25,6 +25,8 @@ navLinks.forEach(link => {
         main.innerHTML = '';
         switch (page) {
             case 'home':
+                footer.style.position = 'relative';
+                main.style.marginBottom = '0';
                 main.appendChild(homePage());
                 break;
             case 'menu':
