@@ -31,10 +31,6 @@ export default function nav(){
         navButton.style.opacity = '1';
     }
 
-    function selectNavLink() {
-        
-    }
-
     const nav = document.createElement('div');
     nav.id='nav';
     const logo = document.createElement('div');
@@ -55,30 +51,24 @@ export default function nav(){
     const navLink1Link = document.createElement('a');
     navLink1Link.href='#';
     navLink1Link.innerHTML='Home';
-    navLink1Link.addEventListener('click', selectNavLink);
+    navLink1Link.classList.add('nav-link');
     navLink1.appendChild(navLink1Link);
     navLinks.appendChild(navLink1);
     const navLink2 = document.createElement('li');
     const navLink2Link = document.createElement('a');
     navLink2Link.href='#';
     navLink2Link.innerHTML='Menu';
-    navLink4Link.addEventListener('click', selectNavLink);
+    navLink2Link.classList.add('nav-link');
     navLink2.appendChild(navLink2Link);
     navLinks.appendChild(navLink2);
     const navLink3 = document.createElement('li');
     const navLink3Link = document.createElement('a');
     navLink3Link.href='#';
     navLink3Link.innerHTML='Contact';
-    navLink4Link.addEventListener('click', selectNavLink);
+    navLink3Link.classList.add('nav-link');
     navLink3.appendChild(navLink3Link);
     navLinks.appendChild(navLink3);
-    const navLink4 = document.createElement('li');
-    const navLink4Link = document.createElement('a');
-    navLink4Link.href='#';
-    navLink4Link.innerHTML='About';
-    navLink4Link.addEventListener('click', selectNavLink);
-    navLink4.appendChild(navLink4Link);
-    navLinks.appendChild(navLink4);
+
     nav.appendChild(navLinks);
 
     const navButton = document.createElement('div');

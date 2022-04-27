@@ -10,6 +10,10 @@ body{
     background-color: whitesmoke;
 }
 
+#content{
+    min-height: 100vh;
+}
+
 main > * {
     margin-bottom: 3rem;
 }
@@ -81,6 +85,7 @@ h2{
 main{
     background-color: whitesmoke;
     z-index: 1;
+    margin-bottom: 9rem;
 }
 
 #menu-close{
@@ -135,8 +140,12 @@ main{
     color:rgba(0, 0, 0, 0.8)
 }
 
+.menu-preview, .contact{
+    padding-top: 3rem;
+}
+
 .story{
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; 
     color:rgba(0, 0, 0, 0.8)
 }
 
@@ -199,7 +208,6 @@ main{
 .burger-preview-item,
 .mexican-preview-item,
 .street-food-preview-item{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),urL("../img/pizza.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,6 +217,22 @@ main{
     width: 80vw;
     color: white;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+.pizza-preview-item{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),urL("../img/pizza.jpg");
+}
+
+.burger-preview-item{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/burger.bmp");
+}
+
+.mexican-preview-item{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/mexican.bmp");
+}
+
+.street-food-preview-item{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../img/street-food.bmp");
 }
 
 .testimonials{
@@ -268,6 +292,10 @@ form > button {
 }
 
 #footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: -1;
     padding:2rem;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
