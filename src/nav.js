@@ -53,20 +53,25 @@ export default function nav(){
     navLink1Link.innerHTML='Home';
     navLink1Link.classList.add('nav-link');
     navLink1.appendChild(navLink1Link);
+    navLink1.addEventListener('click', closeNav);
     navLinks.appendChild(navLink1);
+
     const navLink2 = document.createElement('li');
     const navLink2Link = document.createElement('a');
     navLink2Link.href='#';
     navLink2Link.innerHTML='Menu';
     navLink2Link.classList.add('nav-link');
     navLink2.appendChild(navLink2Link);
+    navLink2.addEventListener('click', closeNav);
     navLinks.appendChild(navLink2);
+    
     const navLink3 = document.createElement('li');
     const navLink3Link = document.createElement('a');
     navLink3Link.href='#';
     navLink3Link.innerHTML='Contact';
     navLink3Link.classList.add('nav-link');
     navLink3.appendChild(navLink3Link);
+    navLink3.addEventListener('click', closeNav);
     navLinks.appendChild(navLink3);
 
     nav.appendChild(navLinks);
