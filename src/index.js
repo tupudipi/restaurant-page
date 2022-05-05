@@ -43,9 +43,5 @@ navLinks.forEach(link => {
 main.appendChild(homePage());
 
 content.appendChild(footerComponent());
-const footer = document.querySelector('#footer');
-// if(page=='home'){
-//     footer.style.position = 'relative';
-//     main.style.marginBottom = '0';
-// } 
+
 

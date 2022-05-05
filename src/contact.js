@@ -30,6 +30,7 @@ export default function contactComponent(){
 
     const formGroup1 = document.createElement('div');
         formGroup1.classList.add('form-group');
+        formGroup1.id = 'form-group-1';
     const formGroup1Label = document.createElement('label');
         formGroup1Label.innerHTML='Nume';
         formGroup1Label.setAttribute('for','name');
@@ -43,6 +44,7 @@ export default function contactComponent(){
 
     const formGroup2 = document.createElement('div');
         formGroup2.classList.add('form-group');
+        formGroup2.id = 'form-group-2';
     const formGroup2Label = document.createElement('label');
         formGroup2Label.innerHTML='Email';
         formGroup2Label.setAttribute('for','email');
@@ -56,6 +58,7 @@ export default function contactComponent(){
 
     const formGroup3 = document.createElement('div');
         formGroup3.classList.add('form-group');
+        formGroup3.id = 'form-group-3';
     const formGroup3Label = document.createElement('label');
         formGroup3Label.innerHTML='Mesaj';
         formGroup3Label.setAttribute('for','message');
